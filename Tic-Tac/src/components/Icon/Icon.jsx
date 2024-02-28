@@ -14,3 +14,4 @@ function Icon({name}){
 }
 
 export default Icon;
+// Question arises is that why we return react icons in jsx format, by doing this we essentially instructing react to render these components when the icon component is used.

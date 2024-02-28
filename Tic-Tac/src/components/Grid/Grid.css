@@ -12,3 +12,11 @@
 .turn_highlight{
     text-align: center;
 }
+.reset{
+    padding: 10px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 10px;
+    position: relative;
+    left: 620px;
+}
