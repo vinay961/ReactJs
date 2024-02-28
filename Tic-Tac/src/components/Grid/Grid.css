@@ -1,0 +1,14 @@
+.grid{
+    height: 600px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    position: relative;
+    left: 400px;
+    top: 20px;   
+}
+
+.turn_highlight{
+    text-align: center;
+}
