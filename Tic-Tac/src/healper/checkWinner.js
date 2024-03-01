@@ -10,6 +10,8 @@ function isWinner(board,symbol){
     if(board[0] == board[4] && board[4] == board[8] && board[8] == symbol) return symbol;
     if(board[2] == board[4] && board[4] == board[6] && board[6] == symbol) return symbol;
 
+    return "";
+
 }
 
 export default isWinner;
