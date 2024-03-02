@@ -1,0 +1,49 @@
+.PokemonHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.List{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.name{
+    text-align: center;
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+.name>div{
+    margin-bottom: 5px;
+}
+.pokemon-name{
+    letter-spacing: 0.5rem;
+    padding: auto;
+    margin: auto;
+    font-weight: bold; 
+    font-size: 18px; 
+    color: #333;
+}
+.pokemon-image{
+    width: 200px; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+.btn{
+
+    font-size: large;
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: rgb(163, 223, 153);
+}
+.b{
+    position: relative;
+    left: 550px;
+}
