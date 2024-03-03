@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react"
 import axios from 'axios'
 import './PokemonList.css'
+import { Link } from "react-router-dom"
+
 function Pokemonlist() {
     const [isLoading , setLoading] = useState(true)
     const [data,setData] = useState([])
@@ -18,16 +20,18 @@ function Pokemonlist() {
         console.log(setprev);
         const img = PokemonDetails.map((p) => axios.get(p.url))
         const pokemonData = await axios.all(img);
+        // console.log(pokemonData);
 
         const result = pokemonData.map((p)=>{
             const pokemon = p.data
             return {
+                id:pokemon.id,
                 name:pokemon.name,
                 image:pokemon.sprites.other.dream_world.front_default,
                 type:pokemon.type
             }
         })
-        console.log(result);
+        // console.log(result);
         setLoading(false)
         setData(result)
         setLoading(false)
@@ -40,7 +44,6 @@ function Pokemonlist() {
     return (
         <div className="PokemonHeader">
 
-            <h3>Pokemon List</h3>
             <hr />
 
             <div>
@@ -50,8 +53,10 @@ function Pokemonlist() {
                 {data.map((item,index)=>{
                     return (
                         <div key={index} className="name"> 
-                            <div className="pokemon-name">{item.name}</div>
-                            <div><img className="pokemon-image" src={item.image} alt={item.name} /></div>
+                            <Link to={`/pokemon/${item.id}`}>
+                                <div className="pokemon-name">{item.name}</div>
+                                <div><img className="pokemon-image" src={item.image} alt={item.name} /></div>
+                            </Link>
                         </div>
                     );
                 })}
