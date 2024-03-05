@@ -4,6 +4,9 @@ function App() {
 
   return (
     <>
+      <div className="search">
+            <h1>Pokemon API</h1>
+      </div>
       <CustomRoutes /> 
     </>
   )
