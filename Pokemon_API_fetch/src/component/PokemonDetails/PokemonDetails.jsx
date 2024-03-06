@@ -28,7 +28,6 @@ function PokemonDetails({pokemonName})  {
         }catch(e){
             console.log("Something went wrong")
         }
-
     }        
 
     useEffect(()=>{
