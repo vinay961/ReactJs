@@ -1,21 +1,17 @@
-import TodoList from './components/TodoList/TodoList'
-import AddTodo from './components/AddTodo/AddTodo.jsx'
+import React, { useState } from 'react';
 import './App.css'
-import { useState } from 'react'
+import Todo from './components/Todo/Todo';
+import TodoDisplay from './components/TodoDisplay/TodoDisplay.jsx'
 
 function App() {
 
-  const[list,setList] = useState([
-    {id:1 , todoData: 'todo 1',finished:false},
-    {id:2 , todoData: 'todo 2',finished:false}
-  ])
-
   return (
-    <>
-      <h1 className='header'>todo_list application development</h1>
-      <AddTodo updatelist={(todo) => setList([...list, {id:list.length+1,todoData:todo,finished:false}])} />
-      <TodoList lista={list} />
-    </>
-  )
+    <div className='header'>
+      <h1>Todo application development</h1>
+      <Todo />
+      <TodoDisplay />
+    </div>
+  );
 }
-export default App
+
+export default App;

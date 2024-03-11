@@ -1,12 +1,15 @@
-import Todo from "../Todo/Todo"
 
-function TodoList({lista}) {
+function TodoList() {
+    const todoList = [
+        {id:1,todoData:'todo-1'},
+        {id:2,todoData:'todo-2'}
+    ]
 
-    return (
+    return(
         <div>
-            {lista.length>0 && lista.map((todo) => {return <Todo key={todo.id} todoData={todo.todoData} isfinished={todo.finished}/>})}
+            {todoList.length> 0 && todoList.map((data)=> {})}
         </div>
-    );
+    )
 }
 
-export default TodoList
+return TodoList

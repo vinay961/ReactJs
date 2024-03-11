@@ -1,14 +1,10 @@
 import './Todo.css'
 
-function Todo({todoData,isfinished}) {
-    return(
-        <div className="mainContent">
-
-            <input type="checkbox" checked={isfinished} />
-            {todoData}
-            <button>Edit</button>
-            <button>Delete</button>
-
+function Todo(){
+    return (
+        <div className="todo">
+            <input type="text" placeholder="Add todo here" />
+            <button>Add</button>
         </div>
     )
 }
