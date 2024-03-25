@@ -1,10 +1,14 @@
-import './Todo.css'
+import { useState } from "react"
 
-function Todo(){
+
+function Todo({todoData,isFinished,changeFinished}){
+    const [finished,setFinished] = useState(isFinished)
     return (
-        <div className="todo">
-            <input type="text" placeholder="Add todo here" />
-            <button>Add</button>
+        <div>
+            <input type="checkbox" onChange={e => setFinished(e.target.checked)} checked={finished} changeFinished={e.target.checked}/>
+            {todoData}
+            <button> Edit </button>
+            <button> Delete </button>
         </div>
     )
 }
