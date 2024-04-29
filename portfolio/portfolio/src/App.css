@@ -1,0 +1,115 @@
+.main_header{
+  text-align: center;
+  background-color: transparent;
+}
+.main_header h1 {
+  letter-spacing: 0.1em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+}
+.main_header h2 {
+  font-size: 14px;
+  letter-spacing: 0.8em;
+}
+.header{
+  margin-top: 30px;
+} 
+.header ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 86px;
+}
+.header li {
+  letter-spacing: 0.1em;
+}
+.header li a{
+  text-decoration: none;
+  color: black;
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("C:\Users\Desktop\ReactJS\portfolio\portfolio\src\leone-venter-VieM9BdZKFo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+.content {
+  position: relative;
+  left: 40px;
+  top: -30px;
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+  background-color: transparent; 
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+  font-size: 36px; 
+  color: #333; 
+}
+
+h2 {
+  font-size: 24px; 
+  color: #666; 
+}
+
+p {
+  font-size: 18px; 
+  color: #555; 
+}
+
+button {
+  position: relative;
+  top: 80px;
+  padding: 15px 25px;
+  font-size: 16px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* App.css */
+
+/* Styles for the footer */
+footer {
+  position: relative;
+  top: 350px;
+  right: 400px;
+  width: 100%;
+  background-color: transparent; /* Change to your preferred background color */
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icons a {
+  margin-right: 10px; 
+  color: #000; 
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.footer-icons a:last-child {
+  margin-right: 0; 
+}
