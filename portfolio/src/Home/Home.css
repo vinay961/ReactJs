@@ -1,0 +1,194 @@
+.main_header{
+    text-align: center;
+    margin-top: 30px;
+    background-color: transparent;
+  }
+  .main_header h1 {
+    letter-spacing: 0.1em;
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+  }
+  .main_header h2 {
+    font-size: 24px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.8em;
+  }
+  .header{
+    margin-top: 30px;
+  } 
+  .header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 86px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .header li {
+    letter-spacing: 0.1em;
+    display: inline;
+    margin-right: 20px;
+  }
+  .header li a{
+    text-decoration: none;
+    color: black;
+  }
+  /* .header ul.show { */
+    /* display: block; Show the menu when isMenuOpen is true */
+  /* } */
+  
+  /* .header ul.hide { */
+    /* display: none; Hide the menu when isMenuOpen is false */
+  /* } */
+  
+  .body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  .content {
+    position: relative;
+    left: 40px;
+    top: -70px;
+    width: 40%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: center; */
+    padding: 20px;
+    background-color: transparent; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 36px; 
+    color: #333; 
+  }
+  
+  h2 {
+    font-size: 24px; 
+    color: #666; 
+  }
+  
+  p {
+    font-size: 18px; 
+    color: #555; 
+  }
+  
+  button {
+    position: relative;
+    top: 60px;
+    padding: 15px 25px;
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  footer {
+    width: 90%;
+    /* height: auto; */
+    height: 0px;
+    background-color: transparent;
+    /* padding: 20px; */
+  }
+  
+  .footer-icons {
+    
+    display: block;
+    position: relative;
+    bottom:50px;
+    left: 40px;
+    /* gap: 20px */
+    /* border: 1px solid black; */
+  }
+  
+  .footer-icons a {
+    margin-right: 10px;
+    color: rgb(60, 57, 57);
+    font-size: 24px;
+    margin: 20px;
+    text-decoration: none;
+  }
+  
+  .footer-icons a:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
+  .menu-toggle {
+    display: none; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+  }
+  .menu-toggle:hover{
+    color: #007bff;
+  }
+  
+  @media (max-width: 780px) {
+    .header ul {
+      display: none; 
+    }
+    
+    .body{
+      background-image: none;
+    }
+    .content{
+      display: relative;
+      left: 115px;
+    }
+    .footer-icons{
+      position: relative;
+      bottom: 50px;
+      left: 110px;
+    }
+  
+    .menu-toggle {
+      display: block; 
+      text-align: right;
+      margin-right: 20px;
+    }
+  
+    .header ul.show {
+      display: block; 
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .header ul.hide {
+      display: none; 
+    }
+  }
+  
+  

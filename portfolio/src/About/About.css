@@ -1,0 +1,10 @@
+.page{
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\About\leone-venter-VieM9BdZKFo-unsplash.jpg");
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

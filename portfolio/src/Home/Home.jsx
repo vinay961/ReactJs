@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebook, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import './App.css'
+import './Home.css'
 
 
-function App() {
+function Home() {
   const [typedName, setTypedName] = useState("");
   const name = "Vinay Rai";
 
@@ -68,7 +68,7 @@ function App() {
           <h1>Hello !! I'm <span style={{ color: '#006400' }}>{typedName}</span></h1>
           <h2>An Ethical Hacker and MERN Stack Developer</h2>
           <p>Expert MERN stack developer and basic ethical hacker, crafting secure web solutions with creativity and precision. Explore my portfolio today!</p>
-          <button>DOWNLOAD RESUME</button>
+          <button><a href="https://docs.google.com/document/d/1z4-vmhlIGmJcOmK4GwSHKxbnQjgiDIYKVqYTEaRrxXo/edit?usp=drive_link">DOWNLOAD RESUME</a></button>
         </div>
       </div>
       <footer>
@@ -91,4 +91,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
