@@ -1,0 +1,42 @@
+
+.contact-page {
+    background-color: linear-gradient(135deg, #8B0000, #800000); /* Dark background color */
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh; 
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact-card {
+    background-color: #444; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); 
+    color: #fff;
+  }
+  
+  .contact-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-control {
+    font-size: 16px;
+    color: #333; 
+  }
+  
+  .btn-primary {
+    font-size: 18px;
+  }
+  
