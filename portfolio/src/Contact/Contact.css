@@ -1,42 +1,90 @@
-
-.contact-page {
-    background-color: linear-gradient(135deg, #8B0000, #800000); /* Dark background color */
-    font-family: 'Roboto', sans-serif; /* Google Font */
-    text-align: center;
-    padding: 50px 0;
-    height: 100vh; 
-  }
-  
-  .contact-container {
+.contact_page{
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\pexels-paduret-5102226.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+}
+
+.right{
+    width: 30%;
+    margin: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.left{
+    width: 30%;
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    margin: 0;
+    padding: 0;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 86px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
-  
-  .contact-card {
-    background-color: #444; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); 
-    color: #fff;
+  .header li {
+    letter-spacing: 0.1em;
+    display: inline;
+    margin-right: 20px;
   }
-  
-  .contact-heading {
-    font-size: 36px;
-    margin-bottom: 30px;
+  .header li a{
+    text-decoration: none;
+    color: black;
   }
-  
-  .form-group {
-    text-align: left;
+
+.footer-icon{
+    position: relative;
+    bottom: 200px;
+    left: 270px;
+}
+
+.footer-icon a {
+  margin-right: 10px;
+  color: rgb(60, 57, 57);
+  font-size: 24px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.footer-icon a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 780px) {
+  .contact_page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
   }
-  
-  .form-control {
-    font-size: 16px;
-    color: #333; 
+
+  .left p {
+    display: none; 
   }
-  
-  .btn-primary {
-    font-size: 18px;
+
+  .right {
+    width: 80%; 
+    margin-top: 20px;
   }
-  
+
+  .footer-icon {
+    display: flex;
+    position: fixed;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+}

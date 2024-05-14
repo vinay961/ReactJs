@@ -1,8 +1,7 @@
-.page{
-    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\About\leone-venter-VieM9BdZKFo-unsplash.jpg");
+.aboutBody{
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\About\pexels-hngstrm-1939485.jpg");
     height: 100vh;
-    position: fixed;
-    top: 0;
+    z-index: -1;
     width: 100%;
     background-size: cover;
     background-position: center;
