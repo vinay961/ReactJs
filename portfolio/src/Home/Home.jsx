@@ -42,9 +42,6 @@ function Home() {
 
   return (
     <>
-      <div className="main_header">
-        <h2>PORTFOLIO</h2>
-      </div>
       <Nav />
       <div className="body">
         <div className="content">
@@ -53,7 +50,7 @@ function Home() {
           <p>Expert MERN stack developer and basic ethical hacker, crafting secure web solutions with creativity and precision. Explore my portfolio today!</p>
           <button><a href="https://docs.google.com/document/d/1z4-vmhlIGmJcOmK4GwSHKxbnQjgiDIYKVqYTEaRrxXo/edit?usp=drive_link">DOWNLOAD RESUME</a></button>
         </div>
-        {/* <footer>
+        <footer>
           <div className="footer-icons">
             <a href="https://www.linkedin.com/in/vinay-rai-ab53452a6/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
@@ -68,7 +65,7 @@ function Home() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-        </footer> */}
+        </footer>
       </div>
     </>
   )

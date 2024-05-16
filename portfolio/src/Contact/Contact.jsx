@@ -8,9 +8,6 @@ import Nav from '../Navigation/Nav.jsx'
 function Contact() {
   return (
     <div className="main">
-      <div className="main_header">
-        <h2>PORTFOLIO</h2>
-      </div>
       <Nav />
       <div className="contact_page">
         <div className="left">

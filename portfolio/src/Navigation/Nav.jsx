@@ -1,35 +1,34 @@
 import React, { useState } from "react";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "./Nav.css";
 
-function Nav() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-        console.log("reached");
-    };
+function Navigation() {
+    const [expanded, setExpanded] = useState(false);
 
     return (
-        <>
-        <div className="main_header">
-            <h2>PORTFOLIO</h2>
-        </div>
-        <div className="header">
-            <button className="menu-toggle" onClick={toggleMenu}>
-                <FontAwesomeIcon icon={faBars} />
-            </button>
-            <ul className={isMenuOpen ? "show" : "hide"}>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </div>
-        </>
-        
+        <Navbar expanded={expanded} expand="lg" bg="light" variant="light" className="header">
+            <Container>
+                <Navbar.Brand href="#">PORTFOLIO</Navbar.Brand>
+                <Navbar.Toggle 
+                    aria-controls="basic-navbar-nav" 
+                    onClick={() => setExpanded(expanded ? false : "expanded")}
+                >
+                    <FontAwesomeIcon icon={faBars} />
+                </Navbar.Toggle>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#home">HOME</Nav.Link>
+                        <Nav.Link href="#about">ABOUT</Nav.Link>
+                        <Nav.Link href="#services">SERVICES</Nav.Link>
+                        <Nav.Link href="#projects">PROJECTS</Nav.Link>
+                        <Nav.Link href="#contact">CONTACT</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
 
-export default Nav;
+export default Navigation;

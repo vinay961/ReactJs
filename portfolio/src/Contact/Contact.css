@@ -1,55 +1,32 @@
 .contact_page{
-    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\pexels-paduret-5102226.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\Designer.png");
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    /* margin-top: 20px; */
 }
 
 .right{
-    width: 30%;
-    margin: 25px;
+    width: 50%;
+    margin: 50px;
     font-family: 'Times New Roman', Times, serif;
 
 }
 .left{
-    width: 30%;
-    margin: 30px;
+    width: 45%;
+    margin: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.header{
-    margin: 0;
-    padding: 0;
+.left h1{
+  position: relative;
+  top: 6px;
 }
-.header ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 86px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  .header li {
-    letter-spacing: 0.1em;
-    display: inline;
-    margin-right: 20px;
-  }
-  .header li a{
-    text-decoration: none;
-    color: black;
-  }
 
 .footer-icon{
     position: relative;
     bottom: 200px;
-    left: 270px;
+    left: 30px;
 }
 
 .footer-icon a {
@@ -69,10 +46,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; 
+    background-image: none;
   }
 
   .left p {
     display: none; 
+  }
+  .left h1{
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8rem;
+    text-align: center;
   }
 
   .right {
@@ -82,9 +69,7 @@
 
   .footer-icon {
     display: flex;
-    position: fixed;
     bottom: 10px; 
-    left: 50%; 
     transform: translateX(-50%); 
   }
 }

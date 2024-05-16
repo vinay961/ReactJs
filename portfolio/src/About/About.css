@@ -1,9 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .aboutBody{
-    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\About\pexels-hngstrm-1939485.jpg");
-    height: 100vh;
-    z-index: -1;
-    width: 100%;
+    background-image: url('C:\Users\Desktop\ReactJS\portfolio\src\About\leone-venter-VieM9BdZKFo-unsplash.jpg'), linear-gradient(rgb(88 120 126 / 30%), rgb(97 76 76 / 30%));
+    background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    filter: brightness(0.8) contrast(1.2);
+    height: 100vh;
+    width: 100%;
+}
+.aboutBody {
+    padding: 20px;
+  }
+  
+.mainHead {
+background-color: #ffffffb3;
+font-family: 'Roboto', sans-serif;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin: 20px 0;
+width: 45%;
+}
+  
+.abouthead{
+    box-shadow: 0 2px 4px grey;
+}
+.abouthead h1 {
+font-size: 2.5rem;
+font-weight: 700;
+color: #343a40;
+text-align: center;
+margin-bottom: 20px;
+}
+  
+.mainHead img {
+width: 150px; /* Adjust size as needed */
+height: 150px; /* Ensure it's a square to make a circle */
+border-radius: 50%;
+display: block;
+margin: 0 auto 20px; /* Center the image horizontally and add bottom margin */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better appearance */
+}
+.mainHead p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+  
+.mainHead p span {
+    font-weight: 700;
+    color: #236dbc;
+}
+
+@media (max-width: 780px){
+    .aboutBody{
+        height: auto;
+    }
+    .mainHead{
+        width: auto;
+        margin: 50px 0;
+    }
 }
