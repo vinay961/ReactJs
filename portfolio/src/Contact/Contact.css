@@ -1,5 +1,9 @@
 .contact_page{
-    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\Designer.png");
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8) contrast(1.2);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,25 +12,47 @@
 }
 
 .right{
-    width: 50%;
+    width: 40%;
     margin: 50px;
+    margin-top: 80px;
     font-family: 'Times New Roman', Times, serif;
-
+}
+.right label{
+  font-size: larger;
+  font-weight:  600px;
+}
+.right input{
+  background-color: rgb(75, 131, 143);
+  font-weight: 500;
+}
+.right textarea{
+  background-color: rgb(75, 131, 143);
 }
 .left{
     width: 45%;
     margin: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .left h1{
   position: relative;
   top: 6px;
+  margin: 20px;
+  text-align: center;
 }
-
-.footer-icon{
-    position: relative;
-    bottom: 200px;
-    left: 30px;
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.left p{
+  margin: 20px;
 }
 
 .footer-icon a {
@@ -46,7 +72,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; 
-    background-image: none;
   }
 
   .left p {
@@ -61,15 +86,15 @@
     letter-spacing: 0.8rem;
     text-align: center;
   }
-
   .right {
     width: 80%; 
     margin-top: 20px;
   }
-
-  .footer-icon {
-    display: flex;
-    bottom: 10px; 
-    transform: translateX(-50%); 
+  .image{
+    display: none;
+  }
+  .footer-icon{
+    position: absolute;
+    bottom: 0;
   }
 }

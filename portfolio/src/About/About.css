@@ -11,36 +11,37 @@
 }
 .aboutBody {
     padding: 20px;
-  }
+    height: auto;
+}
   
 .mainHead {
-background-color: #ffffffb3;
-font-family: 'Roboto', sans-serif;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-padding: 20px;
-margin: 20px 0;
-width: 45%;
+    background-color: #ffffffb3;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 60%;
 }
   
 .abouthead{
     box-shadow: 0 2px 4px grey;
 }
 .abouthead h1 {
-font-size: 2.5rem;
-font-weight: 700;
-color: #343a40;
-text-align: center;
-margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
 }
   
 .mainHead img {
-width: 150px; /* Adjust size as needed */
-height: 150px; /* Ensure it's a square to make a circle */
-border-radius: 50%;
-display: block;
-margin: 0 auto 20px; /* Center the image horizontally and add bottom margin */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better appearance */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Ensure it's a square to make a circle */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px; /* Center the image horizontally and add bottom margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better appearance */
 }
 .mainHead p {
     font-size: 1.1rem;
@@ -52,6 +53,68 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better a
     font-weight: 700;
     color: #236dbc;
 }
+.skill{
+    display: flex;
+}
+.skill1{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.skill2{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.experience{
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes vibrate {
+    0% {
+      transform: translateX(-1.5px);
+    }
+    100% {
+      transform: translateX(1.5px);
+    }
+}
+
+.experience:hover{
+    animation: vibrate 0.1s linear infinite alternate;
+}
+.contents {
+    padding: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #b8dcd3;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon{
+    font-size: large;
+    color: #5c584e;
+    margin-right: 5px;
+}
 
 @media (max-width: 780px){
     .aboutBody{
@@ -60,5 +123,17 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better a
     .mainHead{
         width: auto;
         margin: 50px 0;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill1{
+        width: auto;
+        height: auto;
+    }
+    .skill2{
+        width: auto;
+        height: auto;
     }
 }

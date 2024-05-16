@@ -1,0 +1,29 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .skill-section, .experience-section {
+    margin-top: 20px;
+  }
+  
+  .skill, .experience {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .content {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  

@@ -11,9 +11,30 @@ function Contact() {
       <Nav />
       <div className="contact_page">
         <div className="left">
-          <h1>CONTACT ME</h1>
-          <p>I am available for FrontEnd Development, Backend Development, and Software Developer role. </p>
-          <p>If you have any questions or suggestions, I'd love to hear from you and get to know you better.</p>
+          <div className='up'>
+            <h1>CONTACT ME</h1>
+            <div className="image">
+              <img src="https://img.freepik.com/premium-photo/illustration-cute-girl-avatar-graphic-white-background-created-with-generative-ai-technology_67092-4954.jpg" alt="Avatar Image" />
+            </div>
+            <p>I am available for FrontEnd Development, Backend Development, and Software Developer role. </p>
+            <p>If you have any questions or suggestions, I'd love to hear from you and get to know you better.</p>
+          </div>
+          <footer>
+            <div className="footer-icon">
+              <a href="https://www.linkedin.com/in/vinay-rai-ab53452a6/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://github.com/vinay961" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </footer>
         </div>
         <div className="right">
           <form className="contact-form" action="">
@@ -39,22 +60,6 @@ function Contact() {
           </form>
         </div>
       </div>
-      <footer>
-          <div className="footer-icon">
-            <a href="https://www.linkedin.com/in/vinay-rai-ab53452a6/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a href="https://github.com/vinay961" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </div>
-      </footer>
     </div>
   );
 }
