@@ -1,7 +1,7 @@
   .body {
     height: 92vh;
     width: 100%;
-    background-image: url('C:\Users\Desktop\ReactJS\portfolio\src\About\leone-venter-VieM9BdZKFo-unsplash.jpg'), linear-gradient(rgb(88 120 126 / 30%), rgb(97 76 76 / 30%));
+    background-image: url('C:\Users\Desktop\ReactJS\portfolio\src\About\leone-venter-VieM9BdZKFo-unsplash.jpg'), linear-gradient(rgb(100 116 139/ 30%), rgba(49, 65, 87, 0.3));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -23,17 +23,17 @@
   
   h1 {
     font-size: 36px; 
-    color: #333; 
+    color: rgb(24, 23, 23); 
   }
   
   h2 {
     font-size: 24px; 
-    color: #666; 
+     color: #101820;
   }
   
   p {
-    font-size: 18px; 
-    color: #555; 
+    font-size: 18px;
+    color: rgb(51 65 85); 
   }
   
   button {
@@ -41,7 +41,7 @@
     top: 60px;
     padding: 15px 25px;
     font-size: 16px; 
-    background-color: #007bff; 
+    background-color: rgb(3 105 161); 
     color: #fff; 
     border: none;
     border-radius: 20px;
@@ -87,8 +87,6 @@
   .footer-icons a:last-child {
     margin-right: 0;
   }
-  
-  
   
   .menu-toggle {
     display: none; 

@@ -18,7 +18,7 @@ function About() {
 
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div className="aboutBody">
         <div className="mainHead">
           <div className="abouthead">

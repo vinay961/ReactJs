@@ -2,7 +2,7 @@
 
 /* General Styles */
 .header {
-    background-image: linear-gradient(to right, #ecece7, #8cbbbe);
+    background-image: linear-gradient(to right, rgb(100 116 139), rgb(148 163 184));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,13 @@
     text-align: center;
 }
 
+.nav-link {
+    color: #000; 
+}
+.nav-link.active {
+    color: #007bff; 
+}
+  
 .header li {
     letter-spacing: 0.1em;
     margin-right: 20px;
@@ -37,7 +44,7 @@
 
 .header li a {
     text-decoration: none;
-    color: black;
+    color: rgb(241 245 249);
     font-size: 1em;
     padding: 5px 10px;
     transition: color 0.3s, background-color 0.3s;

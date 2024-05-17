@@ -1,0 +1,15 @@
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    padding: 20px; 
+}
+
+.main{
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Services\leone-venter-VieM9BdZKFo-unsplash.jpg"), linear-gradient(rgb(71 85 105/30%), rgba(39, 60, 89, 0.3));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8) contrast(1.2);
+}

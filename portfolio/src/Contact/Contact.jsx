@@ -8,7 +8,7 @@ import Nav from '../Navigation/Nav.jsx'
 function Contact() {
   return (
     <div className="main">
-      <Nav />
+      {/* <Nav /> */}
       <div className="contact_page">
         <div className="left">
           <div className='up'>

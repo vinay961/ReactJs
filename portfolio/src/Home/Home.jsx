@@ -42,10 +42,10 @@ function Home() {
 
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div className="body">
         <div className="content">
-          <h1>Hello !! I'm <span style={{ color: '#006400' }}>{typedName}</span></h1>
+          <h1>Hello !! I'm <span style={{ color: '#00246B' }}>{typedName}</span></h1>
           <h2>An Ethical Hacker and MERN Stack Developer</h2>
           <p>Expert MERN stack developer and basic ethical hacker, crafting secure web solutions with creativity and precision. Explore my portfolio today!</p>
           <button><a href="https://docs.google.com/document/d/1z4-vmhlIGmJcOmK4GwSHKxbnQjgiDIYKVqYTEaRrxXo/edit?usp=drive_link">DOWNLOAD RESUME</a></button>

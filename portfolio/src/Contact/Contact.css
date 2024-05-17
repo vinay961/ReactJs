@@ -1,5 +1,5 @@
 .contact_page{
-    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-image: url("C:\Users\Desktop\ReactJS\portfolio\src\Contact\leone-venter-VieM9BdZKFo-unsplash.jpg"), linear-gradient(rgb(71 85 105/30%), rgba(39, 60, 89, 0.3));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -22,11 +22,14 @@
   font-weight:  600px;
 }
 .right input{
-  background-color: rgb(75, 131, 143);
+  background-color: rgb(100 116 139);
   font-weight: 500;
 }
 .right textarea{
-  background-color: rgb(75, 131, 143);
+  background-color: rgb(100 116 139);
+}
+.right button{
+  background-color: rgb(71 85 105);
 }
 .left{
     width: 45%;
